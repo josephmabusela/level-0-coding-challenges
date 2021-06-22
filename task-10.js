@@ -10,6 +10,6 @@ function commonLetters(str1, str2) {
             common.splice(char, 1)
         }
     }
-    return sametletters
+    return "Common letters: " + sametletters
 }
 console.log(commonLetters("abcd", "aad"));
