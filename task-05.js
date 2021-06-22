@@ -1,7 +1,10 @@
-function areaOfATriangle(half = 0.5, base, height) {
-    var area = half * base * height;
+function areaOfATriangle(half, base, height) {
+
+    var sides = (half + base + height) / 2;
+
+    var area = Math.sqrt(sides * ((sides - half) * (sides - base) * (sides = height)));
 
     return area
 }
 
-console.log(areaOfATriangle(0.5, 10, 15));
+console.log(areaOfATriangle(3, 5, 6));

@@ -1,7 +1,7 @@
-function numberToTime(time) {
+function numberToTime(num) {
     
-let hour = Math.floor(time);
-let decimal = time - hour;
+let hour = Math.floor(num);
+let decimal = num - hour;
 
 let minute = 1/60
 
