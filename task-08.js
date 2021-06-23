@@ -1,22 +1,9 @@
-function numberToTime(num) {
-    
-let hour = Math.floor(num);
-let decimal = num - hour;
+function numberToTime(number) {
+    var hours = Math.floor(number / 60);  
+    var minutes = number % 60;
 
-let minute = 1/60
-
-decimal = minute * Math.round(decimal / min);
-
-var min = Math.floor(decimal * 60) + "";
-
-if (min.length < 2) {
-    min = 0 + min;
+    return hours+"hours" + ", " + minutes +"minutes";         
 }
 
-number = hour + ":" + minute
-
-return number
-
-}
-
-console.log(numberToTime(2))
+console.log(numberToTime(71));
+console.log(numberToTime(133));
