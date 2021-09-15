@@ -1,10 +1,10 @@
 function evenOrOdd(number) {
     if (number % 2 === 0) {
-        return "Even"
+        console.log("Even")
     }
     else {
-        return "Odd"
+        console.log("Odd")
     }
 }
 
-console.log(evenOrOdd(34));
+evenOrOdd(3);
