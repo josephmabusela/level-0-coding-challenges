@@ -10,4 +10,4 @@ function getMaxium(num1, num2, num3) {
     }
 }
 
-console.log(getMaxium(4,8,7,9))
+console.log(getMaxium(4,7,7));

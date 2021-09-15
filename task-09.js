@@ -5,7 +5,7 @@ function printVowels(str) {
 
     vowels = str.match(/[aeiou]/gi);
     
-    if (vowels !== newVowels) {
+    if (!vowels.includes(newVowels)) {
         newVowels.push(vowels)
     }
     else {
@@ -14,7 +14,9 @@ function printVowels(str) {
 
     newVowels.join(' ');
 
-    return "Vowels: " + newVowels
+    console.log("Vowels: " + newVowels)
+    
 }
-console.log(printVowels("Umuzi"));
+
+printVowels("Umuzi");
 
