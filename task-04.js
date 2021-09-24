@@ -6,6 +6,3 @@ function evenOrOdd(number) {
         console.log("Odd");
     }
 }
-
-
-console.log(evenOrOdd(3));

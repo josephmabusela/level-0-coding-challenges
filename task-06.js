@@ -1,13 +1,18 @@
-   
-function getMaxium(num1, num2, num3) {
-    if (num1 > num2 && num1 > num3) {
-        return num1
+function getMaxium(number1, number2, number3) {
+
+    if (number1 > number2 && number1 > number3) {
+        return number1;
+    } else if (number2 > number1 && number2 > number3) {
+        return number2;
+    } else if (number3 > number1 && number3 > number2) {
+        return number3;
+    } else if (number1 == number2 || number1 == number3) {
+        return number1
+    } else if (number2 == number3 || number2 == number1) {
+        return number2
     }
-    if (num2 > num1 && num2 > num3) {
-        return num2
-    }
-    if (num3 > num1 && num3 > num2) {
-        return num3
+    else { 
+        return "Enter 3 numbers please"
     }
 }
-getMaxium(4,7,7);
+console.log(getMaxium(0,9,0));

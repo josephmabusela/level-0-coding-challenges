@@ -1,21 +1,14 @@
-function printVowels(str) {
-    let vowels = ["a","e","i","o","u","A","E","I","O","U"];
+const vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
 
-    let newVowels = []
-
-    vowels = str.match(/[aeiou]/gi);
-    
-    if (!vowels.includes(newVowels)) {
-        newVowels.push(vowels)
+function countVowels(sentence) {
+  let counts = 0;
+  for(let i = 0; i < vowels.length; i++) {
+    if(vowels.includes(sentence[i])) {
+      counts++;
     }
-    else {
-        delete vowels
-    }
-
-    newVowels.join(' ');
-
-    console.log("Vowels: " + newVowels)
+  }
+  return console.log(counts);
 }
 
-printVowels("Umuzi");
+countVowels('Hello World');
 
