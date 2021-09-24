@@ -1,3 +1,4 @@
+   
 function getMaxium(num1, num2, num3) {
     if (num1 > num2 && num1 > num3) {
         return num1
@@ -9,5 +10,4 @@ function getMaxium(num1, num2, num3) {
         return num3
     }
 }
-
-console.log(getMaxium(4,7,7));
+getMaxium(4,7,7);

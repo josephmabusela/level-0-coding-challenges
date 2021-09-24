@@ -15,7 +15,6 @@ function printVowels(str) {
     newVowels.join(' ');
 
     console.log("Vowels: " + newVowels)
-    
 }
 
 printVowels("Umuzi");

@@ -5,6 +5,12 @@ function numberToTime(number) {
     if (hours <= 1 && minutes <= 1 ) {
         return hours+"hour" + ", " + minutes +"minute"; 
     }
+    else if (hours == 0) {
+        return hours+"hour" + ", " + minutes+"minutes";
+    }
+    else if (minutes == 0) {
+        return hours+"hours" + ", " + minutes+"minute";
+    }
     else if (hours <= 1) {
         return hours+"hour" + ", " + minutes+"minutes";
     }
@@ -17,4 +23,7 @@ function numberToTime(number) {
 }
 
 console.log(numberToTime(61));
+console.log(numberToTime(62));
 console.log(numberToTime(133));
+console.log(numberToTime(59));
+console.log(numberToTime(120));
