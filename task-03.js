@@ -1,6 +1,6 @@
 function hello(name) {
     let greeting = "Hello " + name + "!";
-    console.log(greeting)
+    console.log(greeting);
 }
 
 hello("Tshepo");

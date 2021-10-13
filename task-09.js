@@ -1,22 +1,18 @@
-function printVowels(str) {
-    let vowels = ["a","e","i","o","u","A","E","I","O","U"];
+function countVowels(sentence) {
 
-    let newVowels = []
+  let uniqueVowels = [];
+  let vowels = ['a','e','i','o','u', 'A','E','I', 'O','U']; 
 
-    vowels = str.match(/[aeiou]/gi);
-    
-    if (!vowels.includes(newVowels)) {
-        newVowels.push(vowels)
+  for(let i = 0; i < sentence.length; i++) {
+    for(let j = 0; j < vowels.length; j++) {
+      if(sentence[i].toLowerCase() == vowels[j]) {
+        uniqueVowels.push(vowels[j]);
+      }
     }
-    else {
-        delete vowels
-    }
-
-    newVowels.join(' ');
-
-    console.log("Vowels: " + newVowels)
-    
+ 
+  }
+  let unique =  [...new Set([...uniqueVowels])].join(', ');
+  console.log('Vowels: ' + unique);
 }
 
-printVowels("Umuzi");
-
+countVowels("Umuzi is home");
