@@ -1,16 +1,16 @@
 function commonLetterLetters(string1, string2) {
 
-    var sameletters = [];
+    let sameLetters = [];
     let commonLetter = string2.split("");
 
     for (letter of string1) {
         let char = commonLetter.findIndex(i => i === letter);
         if(char >= 0) {
-            sameletters.push(" " + letter);
+            sameLetters.push(" " + letter);
             commonLetter.splice(char, 1);
         }
     }
-    console.log( "CommonLetter letters: " + sameletters);
+    console.log( "CommonLetter letters: " + sameLetters);
 }
 
 commonLetterLetters("abcd","aabd");
