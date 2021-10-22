@@ -6,10 +6,10 @@ function numberToTime(number) {
         return hours + " hour" + ", " + minutes + " minute"; 
     }
     else if (hours == 0) {
-        return minutes + " minutes";
+        return hours + " hours" + ", " + minutes + " minutes";
     }
     else if (minutes == 0) {
-        return hours + " hours";
+        return hours + " hours" + ", " + minutes + " minutes";
     }
     else if (hours <= 1) {
         return hours + " hour" + ", " + minutes + " minutes";
