@@ -13,5 +13,4 @@ function commonLetterLetters(string1, string2) {
     let unique =  [...new Set([...sameLetters])].join(',');
     console.log( "CommonLetter letters: " + unique);
 }
-
 commonLetterLetters("Hello","Hello");
