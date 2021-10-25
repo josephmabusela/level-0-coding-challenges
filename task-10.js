@@ -10,7 +10,8 @@ function commonLetterLetters(string1, string2) {
             commonLetter.splice(char, 1);
         }
     }
-    console.log( "CommonLetter letters: " + sameLetters);
+    let unique =  [...new Set([...sameLetters])].join(',');
+    console.log( "CommonLetter letters: " + unique);
 }
 
-commonLetterLetters("abcd","aabd");
+commonLetterLetters("Hello","Hello");
