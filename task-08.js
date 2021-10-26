@@ -1,25 +1,26 @@
 function numberToTime(number) {
-    let hours = Math.floor(number / 60);  
-    let minutes = number % 60;
+  let hours = Math.floor(number / 60);
+  let minutes = number % 60;
 
-    if (hours <= 1 && minutes <= 1 ) {
-        return hours + " hour" + ", " + minutes + " minute"; 
-    }
-    else if (hours == 0) {
-        return hours + " hours" + ", " + minutes + " minutes";
-    }
-    else if (minutes == 0) {
-        return hours + " hours" + ", " + minutes + " minutes";
-    }
-    else if (hours <= 1) {
-        return hours + " hour" + ", " + minutes + " minutes";
-    }
-    else if (minutes <= 1) {
-        return hours + " hours" + minutes + " minute";
-    }
-    else {
-        return hours + " hours" + ", " + minutes + " minutes"; 
-    }        
+  let hourStr = "hour";
+  let minuteStr = "minute";
+
+  if (hours === 0 || minutes === 0) {
+    hourStr += "s";
+    minuteStr += "s";
+    return hours + " " + hourStr + ", " + minutes + " " + minuteStr;
+  }
+    if (hours === 0 || hours > 1) {
+    hourStr += "s";
+    return hours + " " + hourStr + ", " + minutes + " " + minuteStr;
+  }  
+  if (minutes === 0 || minutes > 1) {
+    minuteStr += "s";
+    return hours + " " + hourStr + ", " + minutes + " " + minuteStr;
+  } 
+  else {
+    return hours + " " + hourStr + ", " + minutes + " " + minuteStr;
+  }
 }
 
 console.log(numberToTime(61));
